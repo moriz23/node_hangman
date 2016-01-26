@@ -8,15 +8,25 @@ function Word(wrd) {
     for (var i = 0; i < this.word.length; i++) {
       this.lets.push(new Letter(this.word[i]));
     }
-  }
+  };
   this.checkIfLetterFound = function(guessLetter) {
     var whatToReturn = 0;
-    for(var i = 0; i < this.lets.length; i++)
+    for(var i = 0; i < this.lets.length; i++) {
       if(this.lets[i].charac === guessLetter) {
         this.lets[i].appear = true;
         whatToReturn += 1;
+     }
     } 
-  }
-  return whatToReturn;
+    return whatToReturn;
+  };
+  this.didWeFindTheWord = function() {
+    if (this.lets.every(function(curLet) {
+      return curLet.appear === true;
+    })){
+      this.found === true;
+    }
+    return this.found;
+  };
+  
 };
 
