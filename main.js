@@ -1,3 +1,4 @@
+debugger;
 var prompt = require("prompt");
 prompt.start();
 var Word = require("./word.js");
