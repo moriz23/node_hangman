@@ -27,6 +27,12 @@ function Word(wrd) {
     }
     return this.found;
   };
-  
+  this.wordRender = function() {
+    var str = "";
+    for(var i = 0; i < this.lets.length; i++) {
+      str+=this.lets[i].letterRender();
+    }
+    return str;
+  };
 };
 
