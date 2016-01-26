@@ -36,3 +36,5 @@ function Word(wrd) {
   };
 };
 
+module.exports = Word;
+

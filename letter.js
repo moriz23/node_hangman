@@ -5,7 +5,7 @@ function Letter(let) {
   this.letterRender = function() {
     if (this.appear === false) {
       return "__";
-    } else (this.appear === true) {
+    } else {
       return this.charac;
     }
   }
