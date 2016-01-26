@@ -9,6 +9,6 @@ function Letter(let) {
       return this.charac;
     }
   }
-}
+};
 
 module.exports = Letter;
